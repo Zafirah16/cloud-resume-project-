@@ -1,0 +1,12 @@
+<h1>Your Name</h1>
+<p>I am learning Cloud ☁️</p>
+
+<p>Visitors: <span id="count">Loading...</span></p>
+
+<script>
+fetch("https://visitor-count-268581260976.asia-south1.run.app")
+.then(res => res.text())
+.then(data => {
+  document.getElementById("count").innerText = data;
+});
+</script>
